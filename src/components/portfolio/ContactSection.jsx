@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { useInView } from '../hooks/useInView';
+import NeuralCanvas from './NeuralCanvas';
 
 const contacts = [
   { key: 'email', label: 'email', value: 'nahidabdollahi1998@gmail.com', href: 'mailto:nahidabdollahi1998@gmail.com' },
@@ -53,17 +54,19 @@ function CopyLink({ item }) {
   );
 }
 
-export default function ContactSection() {
+export default function ContactSection({ mousePos }) {
   const ref = useRef(null);
   const inView = useInView(ref, { threshold: 0.2 });
+  const fallbackMousePos = useRef({ x: -999, y: -999 });
 
   return (
     <section
       id="contact"
       ref={ref}
       className="section-light relative"
-      style={{ padding: '120px 80px 160px 120px', minHeight: '60vh' }}
+      style={{ padding: '120px 80px 160px 120px', minHeight: '60vh', overflow: 'hidden' }}
     >
+      <NeuralCanvas mousePos={mousePos || fallbackMousePos} />
       <div
         style={{
           opacity: inView ? 1 : 0,

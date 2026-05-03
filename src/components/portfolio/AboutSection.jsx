@@ -63,7 +63,7 @@ export default function AboutSection() {
               { label: 'EDUCATION', value: 'M.Sc. AI & Robotics', sub: 'Shahid Bahonar University' },
               { label: 'LOCATION', value: 'Tehran, Iran', sub: 'Available Remotely' },
               { label: 'EXPERIENCE', value: '5 Years', sub: 'AI & Software Engineering' },
-              { label: 'LANGUAGES', value: 'English (Advanced)', sub: 'German (Intermediate)' },
+              { label: 'LANGUAGES', value: 'English (Advanced)', sub: 'German (Intermediate) · Persian (Native)' },
             ].map(c => (
               <div key={c.label}>
                 <div className="font-mono text-p-grey mb-1" style={{ fontSize: '10px', letterSpacing: '0.2em' }}>{c.label}</div>

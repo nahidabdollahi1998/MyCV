@@ -32,7 +32,7 @@ export default function Portfolio() {
         <SkillsSection />
         <ProjectsSection />
         <ResearchSection />
-        <ContactSection />
+        <ContactSection mousePos={mousePos} />
       </main>
     </div>
   );

@@ -73,7 +73,7 @@ export default function HeroSection({ mousePos }) {
           className="font-mono text-p-grey"
           style={{ fontSize: '11px', letterSpacing: '0.15em', marginBottom: '8px' }}
         >
-          CURRENT ROLE
+          ROLE
         </div>
         <div
           className="font-mono text-p-text"
@@ -92,7 +92,7 @@ export default function HeroSection({ mousePos }) {
           className="font-mono text-p-grey mb-3"
           style={{ fontSize: '11px', letterSpacing: '0.2em', animation: 'fadeUp 0.8s ease 0.2s both' }}
         >
-          NAHID ABDOLLAHI
+          AI ENGINEER &amp; RESEARCHER
         </div>
         <h1
           className="display-heading text-p-text"
@@ -101,11 +101,9 @@ export default function HeroSection({ mousePos }) {
             animation: 'fadeUp 0.9s ease 0.4s both',
           }}
         >
-          AI
+          NAHID
           <br />
-          ENGINEER
-          <br />
-          <span style={{ color: '#BDBDBD' }}>&amp;</span> RESEARCHER
+          ABDOLLAHI
         </h1>
         <div
           className="mt-8 flex items-center gap-4"
